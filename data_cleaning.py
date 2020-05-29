@@ -21,4 +21,55 @@ df_combined = pd.concat([df_brand_amb, df_brand_mnger, df_exp_market, df_mark_di
 
 df_combined.to_csv('glassdoor_jobs_combined_unclean.csv',index = False)
 
-df_combined = pd.read_csv('glassdoor_jobs_combined_unclean.csv')
+df = pd.read_csv('glassdoor_jobs_combined_unclean.csv')
+
+# decreased dataframe size by 18% by removing all duplicated rows.
+df.drop_duplicates(keep=False, inplace=True)
+
+# removes all rows that do not have the State & City listed
+df = df[df['Salary Estimate'] != '-1']
+df = df[df['Location'] != 'Remote']
+df = df[df['Location'] != 'United States']
+
+df['comma'] = df['Location'].apply(lambda x: 1 if ',' in x.lower() else 0)
+df = df[df['comma'] != 0]
+
+# removes all part time positions
+df['part_time'] = df['Job Description'].apply(lambda x: 1 if 'part time' in x.lower() else 0)
+df.part_time.value_counts()
+df = df[df['part_time'] != 1]
+
+df['part_time_still'] = df['Job Title'].apply(lambda x: 1 if 'part time' in x.lower() else 0)
+df.part_time_still.value_counts()
+df = df[df['part_time_still'] != 1]
+
+
+# Salary Parsing
+
+df['hourly'] = df['Salary Estimate'].apply(lambda x: 1 if 'per hour' in x.lower() else 0)
+
+salary = df['Salary Estimate'].apply(lambda x: x.split('(')[0])
+
+minus_Kd = salary.apply(lambda x: x.replace('K', '').replace('$',''))
+
+min_hr = minus_Kd.apply(lambda x: x.lower().replace('per hour', ''))
+
+df['min_salary'] = min_hr.apply(lambda x: int(x.split('-')[0]))
+df['max_salary'] = min_hr.apply(lambda x: int(x.split('-')[1]))
+df['avg_salary'] = (df.min_salary+df.max_salary)/2
+
+#Company name text only
+df['company_txt'] = df.apply(lambda x: x['Company Name'] if x['Rating'] <0 else x['Company Name'][:-3], axis = 1)
+
+#state field 
+df['job_state'] = df['Location'].apply(lambda x: x.split(',')[1])
+df.job_state.value_counts()
+
+
+df['same_state'] = df.apply(lambda x: 1 if x.Location == x.Headquarters else 0, axis = 1)
+
+#age of company 
+df['age'] = df.Founded.apply(lambda x: x if x <1 else 2020 - x)
+
+# clean out bottom half of job state
+# parsing of job description
