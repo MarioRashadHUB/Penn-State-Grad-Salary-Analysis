@@ -71,5 +71,63 @@ df['same_state'] = df.apply(lambda x: 1 if x.Location == x.Headquarters else 0, 
 #age of company 
 df['age'] = df.Founded.apply(lambda x: x if x <1 else 2020 - x)
 
-# clean out bottom half of job state
+
+# Removing all rows that don't have a state in Job State Column
+
+# Not working
+df = df[df['job_state'] != 'LA']
+df = df[df['job_state'] != 'Los Angeles']
+df = df[df['job_state'] != 'Morris']
+df = df[df['job_state'] != 'Cuyahoga']
+df = df[df['job_state'] != 'Orange']
+df = df[df['job_state'] != 'St. Louis']
+df = df[df['job_state'] != 'United States']
+df = df[df['job_state'] != 'Oakland']
+df = df[df['job_state'] != 'Pinellas']
+
+
+df.job_state.value_counts()
+
+
 # parsing of job description
+
+#Microsoft Excel
+df['excel_yn'] = df['Job Description'].apply(lambda x: 1 if 'excel' in x.lower() else 0)
+df.excel_yn.value_counts()
+
+#Micrsoft Powerpoint
+df['powerpoint_yn'] = df['Job Description'].apply(lambda x: 1 if 'powerpoint' in x.lower() else 0)
+df.powerpoint_yn.value_counts()
+
+#Microsoft Offic
+df['micro_office_yn'] = df['Job Description'].apply(lambda x: 1 if 'microsoft office' in x.lower() else 0)
+df.micro_office.value_counts()
+
+#Analytics 
+df['analytics_yn'] = df['Job Description'].apply(lambda x: 1 if 'analytics' in x.lower() or 'analytic' in x.lower() else 0)
+df.analytics_yn.value_counts()
+
+#Photoshop
+df['photoshop_yn'] = df['Job Description'].apply(lambda x: 1 if 'photoshop' in x.lower() else 0)
+df.photoshop_yn.value_counts()
+
+#Adobe Products
+df['adobe_yn'] = df['Job Description'].apply(lambda x: 1 if 'adobe' in x.lower() else 0)
+df.adobe_yn.value_counts()
+
+#Adwords
+df['adwords_yn'] = df['Job Description'].apply(lambda x: 1 if 'adwords' in x.lower() or 'ad words' in x.lower() else 0)
+df.adwords_yn.value_counts()
+
+
+
+df.columns
+
+#Finish this part too
+df_out = df.drop(['Unnamed: 0'], axis =1)
+
+df_out.to_csv('salary_data_cleaned.csv',index = False)
+
+
+
+
