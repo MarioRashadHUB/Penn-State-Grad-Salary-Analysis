@@ -72,22 +72,6 @@ df['same_state'] = df.apply(lambda x: 1 if x.Location == x.Headquarters else 0, 
 df['age'] = df.Founded.apply(lambda x: x if x <1 else 2020 - x)
 
 
-# Removing all rows that don't have a state in Job State Column
-
-# Not working
-df = df[df['job_state'] != 'LA']
-df = df[df['job_state'] != 'Los Angeles']
-df = df[df['job_state'] != 'Morris']
-df = df[df['job_state'] != 'Cuyahoga']
-df = df[df['job_state'] != 'Orange']
-df = df[df['job_state'] != 'St. Louis']
-df = df[df['job_state'] != 'United States']
-df = df[df['job_state'] != 'Oakland']
-df = df[df['job_state'] != 'Pinellas']
-
-
-df.job_state.value_counts()
-
 
 # parsing of job description
 
@@ -99,7 +83,7 @@ df.excel_yn.value_counts()
 df['powerpoint_yn'] = df['Job Description'].apply(lambda x: 1 if 'powerpoint' in x.lower() else 0)
 df.powerpoint_yn.value_counts()
 
-#Microsoft Offic
+#Microsoft Office
 df['micro_office_yn'] = df['Job Description'].apply(lambda x: 1 if 'microsoft office' in x.lower() else 0)
 df.micro_office.value_counts()
 
@@ -121,12 +105,7 @@ df.adwords_yn.value_counts()
 
 
 
-df.columns
-
-#Finish this part too
-df_out = df.drop(['Unnamed: 0'], axis =1)
-
-df_out.to_csv('salary_data_cleaned.csv',index = False)
+df.to_csv('comm_data_cleaned.csv',index = False)
 
 
 
