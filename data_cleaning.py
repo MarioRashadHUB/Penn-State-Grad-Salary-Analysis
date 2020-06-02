@@ -78,6 +78,9 @@ df = df[df['job_simp'] != 'na']
 df.job_simp.value_counts()
 
 
+#fix rating
+df['Rating'] = df['Rating'].clip(lower = 0)
+
 # Salary Parsing
 
 df['hourly'] = df['Salary Estimate'].apply(lambda x: 1 if 'per hour' in x.lower() else 0)
@@ -111,6 +114,7 @@ df['age'] = df.Founded.apply(lambda x: x if x <1 else 2020 - x)
 
 # parsing of job description
 
+df['Job Title'].value_counts(5)
 #Microsoft Excel
 df['excel_yn'] = df['Job Description'].apply(lambda x: 1 if 'excel' in x.lower() else 0)
 df.excel_yn.value_counts()
