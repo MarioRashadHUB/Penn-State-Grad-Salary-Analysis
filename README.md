@@ -11,3 +11,48 @@
 **Scraper Github:** https://github.com/arapfaik/scraping-glassdoor-selenium
 
 **Scraper Article:** https://towardsdatascience.com/selenium-tutorial-scraping-glassdoor-com-in-10-minutes-3d0915c6d905
+
+## Web Scraping
+Tweaked the web scraper github repo (above) to scrape 7000 job postings from glassdoor.com. With each job, I got the following:
+*	Job title
+*	Salary Estimate
+*	Job Description
+*	Rating
+*	Company 
+*	Location
+*	Company Headquarters 
+*	Company Size
+*	Company Founded Date
+*	Type of Ownership 
+*	Industry
+*	Sector
+*	Revenue
+*	Competitors 
+
+## Data Cleaning
+The following changes were made and created the following variables before I could preform my analysis:
+
+*	Parsed numeric data out of salary 
+*	Made columns for employer provided salary and hourly wages 
+*	Removed rows without salary 
+*	Parsed rating out of company text 
+*	Made a new column for company state 
+*	Added a column for if the job was at the company’s headquarters 
+*	Transformed founded date into age of company 
+*	Made columns for if different skills were listed in the job description:
+    * Excel  
+    * Powerpoint  
+    * Microsoft Office  
+    * Analytics  
+    * Photoshop
+    * Adobe
+    * Adwords
+*	Column for simplified job title and Seniority 
+*	Column for description length 
+
+## EDA
+I looked at the distributions of the data and the value counts for the various categorical variables. Below are a few highlights from the pivot tables. 
+
+![alt text](https://github.com/MarioRashadHUB/comm_salary_proj/blob/master/images/img2.png "Highest Hiring Cities")
+![alt text](https://github.com/MarioRashadHUB/comm_salary_proj/blob/master/images/img1.png "Average Salary by title")
+![alt text](https://github.com/MarioRashadHUB/comm_salary_proj/blob/master/images/img3.png "Correlations")
