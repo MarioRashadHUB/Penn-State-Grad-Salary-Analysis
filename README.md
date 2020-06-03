@@ -5,6 +5,5 @@
 
 ## Code and Resources Used 
 **Python Version:** 3.7
-**Scraper Github:** https://github.com/arapfaik/scraping-glassdoor-selenium  
 **Scraper Article:** https://towardsdatascience.com/selenium-tutorial-scraping-glassdoor-com-in-10-minutes-3d0915c6d905  
 **Packages:** pandas, numpy, matplotlib, seaborn, selenium.
