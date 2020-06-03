@@ -47,7 +47,7 @@ The following changes were made and created the following variables before I cou
     * Photoshop
     * Adobe
     * Adwords
-*	Column for simplified job title and Seniority 
+*	Column for simplified job title
 *	Column for description length 
 
 ## EDA
