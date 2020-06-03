@@ -50,7 +50,7 @@ The following changes were made and created the following variables before I cou
 *	Column for simplified job title
 *	Column for description length 
 
-## EDA
+## Exploratory Data Analysis
 I looked at the distributions of the data and the value counts for the various categorical variables. Below are a few highlights from the pivot tables. 
 
 ![alt text](https://github.com/MarioRashadHUB/comm_salary_proj/blob/master/images/img2.png "Highest Hiring Cities")
