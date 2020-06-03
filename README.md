@@ -3,5 +3,9 @@
 * Scraped over 7000 job descriptions from glassdoor using python and selenium
 * Engineered features from each glassdoor job description to quantify and observe the value companies put on excel, powerpoint, microsoft office, analytics, photoshop, adobe, and adwords.
 
-## resources
-https://github.com/arapfaik/scraping-glassdoor-selenium
+## Code and Resources Used 
+**Python Version:** 3.7  
+**Packages:** pandas, matplotlib, seaborn, selenium
+**Scraper Github:** https://github.com/arapfaik/scraping-glassdoor-selenium  
+**Scraper Article:** https://towardsdatascience.com/selenium-tutorial-scraping-glassdoor-com-in-10-minutes-3d0915c6d905  
+
