@@ -8,6 +8,8 @@
 
 **Packages:** pandas, matplotlib, seaborn, selenium
 
+**Ken Jee's Data Science Project from Scratch Series:** https://www.youtube.com/watch?v=MpF9HENQjDo&list=PL2zq7klxX5ASFejJj80ob9ZAnBHdz5O1t
+
 **Scraper Github:** https://github.com/arapfaik/scraping-glassdoor-selenium
 
 **Scraper Article:** https://towardsdatascience.com/selenium-tutorial-scraping-glassdoor-com-in-10-minutes-3d0915c6d905
