@@ -149,5 +149,26 @@ df.adwords_yn.value_counts()
 df.to_csv('comm_data_cleaned.csv',index = False)
 
 
+'''
+### july 1st 2020, updating data_cleaned file so it has changes made from jupyter notebook file ###
 
+
+df = pd.read_csv('comm_data_cleaned.csv')
+
+# Converts all negative values in 'Rating' column to 0.0
+df['Rating'] = df['Rating'].clip(lower = 0)
+
+# Removes unecessary columns
+df = df.drop(['comma', 'part_time', 'part_time_still'], axis=1)
+
+# hourly wage to annual 
+df['min_salary'] = df.apply(lambda x: x.min_salary*2 if x.hourly ==1 else x.min_salary, axis =1)
+df['max_salary'] = df.apply(lambda x: x.max_salary*2 if x.hourly ==1 else x.max_salary, axis =1)
+
+# Add's 0's to all min and max salaries 
+df['min_salary'] = df.apply(lambda x: x.min_salary*1000, axis =1)
+df['max_salary'] = df.apply(lambda x: x.max_salary*1000, axis =1)
+
+df.to_csv('comm_data_cleaned.csv',index = False)
+'''
 
