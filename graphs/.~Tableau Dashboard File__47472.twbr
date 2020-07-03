@@ -1,18 +1,20 @@
 <?xml version='1.0' encoding='utf-8' ?>
 
 <!-- build 20202.20.0614.2338                               -->
-<workbook source-build='2020.2.2 (20202.20.0614.2338)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+<workbook source-build='2020.2.2 (20202.20.0614.2338)' source-platform='mac' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
   <document-format-change-manifest>
     <IntuitiveSorting />
     <IntuitiveSorting_SP2 />
     <MapboxVectorStylesAndLayers />
     <_.fcp.MarkAnimation.true...MarkAnimation />
     <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
     <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
     <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
     <SheetIdentifierTracking />
     <WindowsPersistSimpleIdentifiers />
   </document-format-change-manifest>
+  <repository-location id='AverageCommSalariesDashboard' path='/workbooks' revision='1.0' />
   <preferences>
     <preference name='ui.encoding.shelf.height' value='24' />
     <preference name='ui.shelf.height' value='26' />
@@ -22,7 +24,7 @@
       <connection class='federated'>
         <named-connections>
           <named-connection caption='comm_data_cleaned' name='excel-direct.0fqh26f1qn1jvy11npowq19kjiph'>
-            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/mtss/Downloads/comm_data_cleaned.xlsx' interpretationMode='0' password='' server='' validate='no' />
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='/Users/mtss/Downloads/comm_data_cleaned.xlsx' interpretationMode='0' password='' server='' validate='no' workgroup-auth-mode='as-is' />
           </named-connection>
         </named-connections>
         <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0fqh26f1qn1jvy11npowq19kjiph' name='comm_data_cleaned' table='[comm_data_cleaned$]' type='table'>
@@ -93,6 +95,7 @@
             <column datatype='integer' name='adwords_yn' ordinal='29' />
           </columns>
         </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <refresh increment-key='' incremental-updates='false' />
         <metadata-records>
           <metadata-record class='capability'>
             <remote-name />
@@ -603,6 +606,419 @@
           <groupfilter function='level-members' level='[none:job_simp:nk]' />
         </groupfilter>
       </group>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='/Users/mtss/Documents/ds_projects/comm_salary_proj/comm_data_cleaned (for tableau).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Job Title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Job Title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Job Title</remote-alias>
+              <ordinal>0</ordinal>
+              <family>comm_data_cleaned</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>593</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Salary Estimate</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Salary Estimate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Salary Estimate</remote-alias>
+              <ordinal>1</ordinal>
+              <family>comm_data_cleaned</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>159</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Job Description</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Job Description]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Job Description</remote-alias>
+              <ordinal>2</ordinal>
+              <family>comm_data_cleaned</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>986</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Rating</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Rating]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Rating</remote-alias>
+              <ordinal>3</ordinal>
+              <family>comm_data_cleaned</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>38</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Company Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Company Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Company Name</remote-alias>
+              <ordinal>4</ordinal>
+              <family>comm_data_cleaned</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>873</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Location</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Location]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Location</remote-alias>
+              <ordinal>5</ordinal>
+              <family>comm_data_cleaned</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>506</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Headquarters</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Headquarters]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Headquarters</remote-alias>
+              <ordinal>6</ordinal>
+              <family>comm_data_cleaned</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>392</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Size</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Size]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Size</remote-alias>
+              <ordinal>7</ordinal>
+              <family>comm_data_cleaned</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Founded</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Founded]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Founded</remote-alias>
+              <ordinal>8</ordinal>
+              <family>comm_data_cleaned</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>115</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Type of ownership</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Type of ownership]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Type of ownership</remote-alias>
+              <ordinal>9</ordinal>
+              <family>comm_data_cleaned</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Industry</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Industry]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Industry</remote-alias>
+              <ordinal>10</ordinal>
+              <family>comm_data_cleaned</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>87</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sector</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Sector]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sector</remote-alias>
+              <ordinal>11</ordinal>
+              <family>comm_data_cleaned</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Revenue</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Revenue]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Revenue</remote-alias>
+              <ordinal>12</ordinal>
+              <family>comm_data_cleaned</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Competitors</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Competitors]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Competitors</remote-alias>
+              <ordinal>13</ordinal>
+              <family>comm_data_cleaned</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>205</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>job_simp</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[job_simp]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>job_simp</remote-alias>
+              <ordinal>14</ordinal>
+              <family>comm_data_cleaned</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>hourly</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[hourly]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>hourly</remote-alias>
+              <ordinal>15</ordinal>
+              <family>comm_data_cleaned</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>min_salary</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[min_salary]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>min_salary</remote-alias>
+              <ordinal>16</ordinal>
+              <family>comm_data_cleaned</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>86</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>max_salary</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[max_salary]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>max_salary</remote-alias>
+              <ordinal>17</ordinal>
+              <family>comm_data_cleaned</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>104</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>avg_salary</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_salary]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_salary</remote-alias>
+              <ordinal>18</ordinal>
+              <family>comm_data_cleaned</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>115</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>company_txt</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[company_txt]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>company_txt</remote-alias>
+              <ordinal>19</ordinal>
+              <family>comm_data_cleaned</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>867</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>job_state</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[job_state]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>job_state</remote-alias>
+              <ordinal>20</ordinal>
+              <family>comm_data_cleaned</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>46</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>same_state</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[same_state]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>same_state</remote-alias>
+              <ordinal>21</ordinal>
+              <family>comm_data_cleaned</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>age</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>age</remote-alias>
+              <ordinal>22</ordinal>
+              <family>comm_data_cleaned</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>115</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>excel_yn</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[excel_yn]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>excel_yn</remote-alias>
+              <ordinal>23</ordinal>
+              <family>comm_data_cleaned</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>powerpoint_yn</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[powerpoint_yn]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>powerpoint_yn</remote-alias>
+              <ordinal>24</ordinal>
+              <family>comm_data_cleaned</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>micro_office_yn</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[micro_office_yn]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>micro_office_yn</remote-alias>
+              <ordinal>25</ordinal>
+              <family>comm_data_cleaned</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>analytics_yn</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[analytics_yn]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>analytics_yn</remote-alias>
+              <ordinal>26</ordinal>
+              <family>comm_data_cleaned</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>photoshop_yn</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[photoshop_yn]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>photoshop_yn</remote-alias>
+              <ordinal>27</ordinal>
+              <family>comm_data_cleaned</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>adobe_yn</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[adobe_yn]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>adobe_yn</remote-alias>
+              <ordinal>28</ordinal>
+              <family>comm_data_cleaned</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>adwords_yn</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[adwords_yn]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>adwords_yn</remote-alias>
+              <ordinal>29</ordinal>
+              <family>comm_data_cleaned</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
       <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
       <style>
         <style-rule element='mark'>
@@ -682,125 +1098,8 @@
                 </columns>
               </relation>
             </properties>
-          </object>
-        </objects>
-      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
-    </datasource>
-    <datasource inline='true' name='Clipboard_20200702T084737' version='18.1'>
-      <connection class='federated'>
-        <named-connections>
-          <named-connection caption='Clipboard_20200702T084737' name='Clipboard_20200702T084737leaf'>
-            <connection class='textscan' directory='/Users/mtss/Documents/My Tableau Repository/Datasources' filename='Clipboard_20200702T084737.txt' />
-          </named-connection>
-        </named-connections>
-        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='Clipboard_20200702T084737leaf' name='Clipboard_20200702T084737#txt' table='[Clipboard_20200702T084737#txt]' type='table'>
-          <columns character-set='UTF-8' header='yes' locale='en_US' separator='&#9;'>
-            <column datatype='string' name='Job State' ordinal='0' />
-            <column datatype='string' name='Position' ordinal='1' />
-            <column datatype='integer' name='AVG((Max Salary)-(Min Salary))' ordinal='2' />
-            <column datatype='integer' name='Avg. Max Salary' ordinal='3' />
-          </columns>
-        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
-        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='Clipboard_20200702T084737leaf' name='Clipboard_20200702T084737#txt' table='[Clipboard_20200702T084737#txt]' type='table'>
-          <columns character-set='UTF-8' header='yes' locale='en_US' separator='&#9;'>
-            <column datatype='string' name='Job State' ordinal='0' />
-            <column datatype='string' name='Position' ordinal='1' />
-            <column datatype='integer' name='AVG((Max Salary)-(Min Salary))' ordinal='2' />
-            <column datatype='integer' name='Avg. Max Salary' ordinal='3' />
-          </columns>
-        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
-        <metadata-records>
-          <metadata-record class='capability'>
-            <remote-name />
-            <remote-type>0</remote-type>
-            <parent-name>[Clipboard_20200702T084737#txt]</parent-name>
-            <remote-alias />
-            <aggregation>Count</aggregation>
-            <contains-null>true</contains-null>
-            <attributes>
-              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
-              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
-              <attribute datatype='string' name='field-delimiter'>&quot;&#9;&quot;</attribute>
-              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
-              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
-              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
-            </attributes>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Job State</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[Job State]</local-name>
-            <parent-name>[Clipboard_20200702T084737#txt]</parent-name>
-            <remote-alias>Job State</remote-alias>
-            <ordinal>0</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <scale>1</scale>
-            <width>1073741823</width>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RUS' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Clipboard_20200702T084737]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Position</remote-name>
-            <remote-type>129</remote-type>
-            <local-name>[Position]</local-name>
-            <parent-name>[Clipboard_20200702T084737#txt]</parent-name>
-            <remote-alias>Position</remote-alias>
-            <ordinal>1</ordinal>
-            <local-type>string</local-type>
-            <aggregation>Count</aggregation>
-            <scale>1</scale>
-            <width>1073741823</width>
-            <contains-null>true</contains-null>
-            <collation flag='0' name='LEN_RUS' />
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Clipboard_20200702T084737]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>AVG((Max Salary)-(Min Salary))</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[AVG((Max Salary)-(Min Salary))]</local-name>
-            <parent-name>[Clipboard_20200702T084737#txt]</parent-name>
-            <remote-alias>AVG((Max Salary)-(Min Salary))</remote-alias>
-            <ordinal>2</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Clipboard_20200702T084737]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-          <metadata-record class='column'>
-            <remote-name>Avg. Max Salary</remote-name>
-            <remote-type>20</remote-type>
-            <local-name>[Avg. Max Salary]</local-name>
-            <parent-name>[Clipboard_20200702T084737#txt]</parent-name>
-            <remote-alias>Avg. Max Salary</remote-alias>
-            <ordinal>3</ordinal>
-            <local-type>integer</local-type>
-            <aggregation>Sum</aggregation>
-            <contains-null>true</contains-null>
-            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Clipboard_20200702T084737]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
-          </metadata-record>
-        </metadata-records>
-      </connection>
-      <aliases enabled='yes' />
-      <column datatype='string' name='[Job State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
-      <_.fcp.ObjectModelTableType.true...column caption='Clipboard_20200702T084737' datatype='table' name='[__tableau_internal_object_id__].[Clipboard_20200702T084737]' role='measure' type='quantitative' />
-      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
-      <semantic-values>
-        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
-      </semantic-values>
-      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
-        <objects>
-          <object caption='Clipboard_20200702T084737' id='Clipboard_20200702T084737'>
-            <properties context=''>
-              <relation connection='Clipboard_20200702T084737leaf' name='Clipboard_20200702T084737#txt' table='[Clipboard_20200702T084737#txt]' type='table'>
-                <columns character-set='UTF-8' header='yes' locale='en_US' separator='&#9;'>
-                  <column datatype='string' name='Job State' ordinal='0' />
-                  <column datatype='string' name='Position' ordinal='1' />
-                  <column datatype='integer' name='AVG((Max Salary)-(Min Salary))' ordinal='2' />
-                  <column datatype='integer' name='Avg. Max Salary' ordinal='3' />
-                </columns>
-              </relation>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
             </properties>
           </object>
         </objects>
@@ -952,54 +1251,6 @@
       </table>
       <simple-id uuid='{44C2B734-4140-4F7E-BE4D-FB792C256692}' />
     </worksheet>
-    <worksheet name='Creative Director States #2'>
-      <table>
-        <view>
-          <datasources>
-            <datasource name='Clipboard_20200702T084737' />
-          </datasources>
-          <mapsources>
-            <mapsource name='Tableau' />
-          </mapsources>
-          <datasource-dependencies datasource='Clipboard_20200702T084737'>
-            <column datatype='integer' name='[AVG((Max Salary)-(Min Salary))]' role='measure' type='quantitative' />
-            <column datatype='integer' name='[Avg. Max Salary]' role='measure' type='quantitative' />
-            <column datatype='string' name='[Job State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
-            <column datatype='string' name='[Position]' role='dimension' type='nominal' />
-            <column-instance column='[Job State]' derivation='None' name='[none:Job State:nk]' pivot='key' type='nominal' />
-            <column-instance column='[Position]' derivation='None' name='[none:Position:nk]' pivot='key' type='nominal' />
-            <column-instance column='[AVG((Max Salary)-(Min Salary))]' derivation='Sum' name='[sum:AVG((Max Salary)-(Min Salary)):qk]' pivot='key' type='quantitative' />
-            <column-instance column='[Avg. Max Salary]' derivation='Sum' name='[sum:Avg. Max Salary:qk]' pivot='key' type='quantitative' />
-          </datasource-dependencies>
-          <aggregation value='true' />
-        </view>
-        <style>
-          <style-rule element='axis'>
-            <encoding attr='space' class='0' field='[Clipboard_20200702T084737].[Longitude (generated)]' field-type='quantitative' max='-6803988.4777203565' min='-13856659.573239399' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
-            <encoding attr='space' class='0' field='[Clipboard_20200702T084737].[Latitude (generated)]' field-type='quantitative' max='7196070.562521521' min='1702411.0785269719' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
-          </style-rule>
-          <style-rule element='map'>
-            <format attr='washout' value='0.0' />
-          </style-rule>
-        </style>
-        <panes>
-          <pane selection-relaxation-option='selection-relaxation-allow'>
-            <view>
-              <breakdown value='auto' />
-            </view>
-            <mark class='Automatic' />
-            <encodings>
-              <lod column='[Clipboard_20200702T084737].[none:Job State:nk]' />
-              <size column='[Clipboard_20200702T084737].[sum:AVG((Max Salary)-(Min Salary)):qk]' />
-              <color column='[Clipboard_20200702T084737].[sum:Avg. Max Salary:qk]' />
-            </encodings>
-          </pane>
-        </panes>
-        <rows>([Clipboard_20200702T084737].[none:Position:nk] * [Clipboard_20200702T084737].[Latitude (generated)])</rows>
-        <cols>[Clipboard_20200702T084737].[Longitude (generated)]</cols>
-      </table>
-      <simple-id uuid='{C5B79047-E167-4312-98EF-4CCD450F326E}' />
-    </worksheet>
     <worksheet name='State Salaries'>
       <layout-options>
         <title>
@@ -1084,7 +1335,7 @@
       <simple-id uuid='{9F2845BB-0B58-4EFB-BF1F-54A2DB742696}' />
     </worksheet>
   </worksheets>
-  <windows source-height='51'>
+  <windows source-height='30'>
     <window class='worksheet' name='Average Salaries'>
       <cards>
         <edge name='left'>
@@ -1114,7 +1365,7 @@
       </cards>
       <simple-id uuid='{C8B0885A-1C52-4D44-8808-ACADBEA91380}' />
     </window>
-    <window class='worksheet' maximized='true' name='Average Sector Salaries'>
+    <window class='worksheet' name='Average Sector Salaries'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -1137,7 +1388,7 @@
       </cards>
       <simple-id uuid='{CAE43F46-305B-4FDB-9329-9411CC42B4C3}' />
     </window>
-    <window class='worksheet' name='COVID-19 Popular Creative Director States'>
+    <window class='worksheet' maximized='true' name='COVID-19 Popular Creative Director States'>
       <cards>
         <edge name='left'>
           <strip size='160'>
@@ -1159,35 +1410,6 @@
         </edge>
       </cards>
       <simple-id uuid='{FAE2FF47-F1E2-41E9-BD0B-F619B9616019}' />
-    </window>
-    <window class='worksheet' name='Creative Director States #2'>
-      <cards>
-        <edge name='left'>
-          <strip size='160'>
-            <card type='pages' />
-            <card type='filters' />
-            <card type='marks' />
-          </strip>
-        </edge>
-        <edge name='top'>
-          <strip size='2147483647'>
-            <card type='columns' />
-          </strip>
-          <strip size='2147483647'>
-            <card type='rows' />
-          </strip>
-          <strip size='31'>
-            <card type='title' />
-          </strip>
-        </edge>
-        <edge name='right'>
-          <strip size='160'>
-            <card pane-specification-id='0' param='[Clipboard_20200702T084737].[sum:Avg. Max Salary:qk]' type='color' />
-            <card pane-specification-id='0' param='[Clipboard_20200702T084737].[sum:AVG((Max Salary)-(Min Salary)):qk]' type='size' />
-          </strip>
-        </edge>
-      </cards>
-      <simple-id uuid='{8A09A031-91C7-4B18-86ED-478C66DF4711}' />
     </window>
     <window class='worksheet' name='State Salaries'>
       <cards>
