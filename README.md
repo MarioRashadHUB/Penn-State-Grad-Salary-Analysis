@@ -60,3 +60,6 @@ I looked at the distributions of the data and the value counts for the various c
 ![alt text](https://github.com/MarioRashadHUB/comm_salary_proj/blob/master/images/exp_adobe.png "Experience with Adobe Cloud")
 ![alt text](https://github.com/MarioRashadHUB/comm_salary_proj/blob/master/images/img1.png "Average Salary by title")
 ![alt text](https://github.com/MarioRashadHUB/comm_salary_proj/blob/master/images/exp_excel.png "Experience with Excel")
+
+## Results
+Here are some of the interesting statisitical results that I found from this analysis.
