@@ -1,3 +1,5 @@
+![alt text](https://github.com/MarioRashadHUB/comm_salary_proj/blob/master/images/psu_logo.png "Experience with Excel")
+
 # Penn State Graduate Salary Analysis: Project Overview
 * Preformed a salary analysis for common job titles that graduates from the Pennsylvania State University College of Communications recieve to aid in salary negotations and relocation depending on the job that be being seeked by the student.
 * Scraped over 7000 job descriptions from glassdoor using python and selenium
