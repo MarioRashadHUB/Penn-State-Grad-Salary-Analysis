@@ -55,9 +55,8 @@ The following changes were made and created the following variables before I cou
 *	Column for description length 
 
 ## Exploratory Data Analysis
-I looked at the distributions of the data and the value counts for the various categorical variables. Below are a few highlights. 
+I looked at the distributions of the data and the value counts for the various categorical variables. Below are one of the highlights. 
 
-![alt text](https://github.com/MarioRashadHUB/comm_salary_proj/blob/master/images/img1.png "Average Salary by title")
 ![alt text](https://github.com/MarioRashadHUB/comm_salary_proj/blob/master/images/exp_excel.png "Experience with Excel")
 
 ## Results
