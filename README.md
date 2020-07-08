@@ -1,3 +1,5 @@
+![alt text](https://github.com/MarioRashadHUB/comm_salary_proj/blob/master/images/psu_logo.png "Experience with Excel")
+
 # Penn State Graduate Salary Analysis: Project Overview
 * Preformed a salary analysis for common job titles that graduates from the Pennsylvania State University College of Communications recieve to aid in salary negotations and relocation depending on the job that be being seeked by the student.
 * Scraped over 7000 job descriptions from glassdoor using python and selenium
@@ -53,8 +55,11 @@ The following changes were made and created the following variables before I cou
 *	Column for description length 
 
 ## Exploratory Data Analysis
-I looked at the distributions of the data and the value counts for the various categorical variables. Below are a few highlights from the pivot tables. 
+I looked at the distributions of the data and the value counts for the various categorical variables. Below are a few highlights. 
 
 ![alt text](https://github.com/MarioRashadHUB/comm_salary_proj/blob/master/images/exp_adobe.png "Experience with Adobe Cloud")
 ![alt text](https://github.com/MarioRashadHUB/comm_salary_proj/blob/master/images/img1.png "Average Salary by title")
 ![alt text](https://github.com/MarioRashadHUB/comm_salary_proj/blob/master/images/exp_excel.png "Experience with Excel")
+
+## Results
+Here are some of the interesting statisitical results that I found from this analysis.
