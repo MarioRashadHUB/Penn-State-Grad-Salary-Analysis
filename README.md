@@ -95,15 +95,7 @@ Those who have exoerience with adobe creative cloud make 16% more in total salar
 Across all job titles, the insurance sector has the best average salary of $87,655.
 
 ### My Favorite Fact from Analysis:
-Hawaii is the #5 best paying state for Marketing Coordinators at.
-
-### Ranking of best 5 paying states across all job title average salaries:
-
-1. Arkansas: $89,250.
-2. Kansas: $75,750.
-3. South Dakota: $74,500.
-4. Montana: $73,2500.
-5. Iowa: $73,071.
+Hawaii is the #5 best paying state for Marketing Coordinators with a average salary of $80,500.
 
 ### Top 5 cities with the most job postings:
 
@@ -112,6 +104,14 @@ Hawaii is the #5 best paying state for Marketing Coordinators at.
 3. Chicago, IL: 58 job postings.
 4. Seattle, WA: 56 job postings.
 5. Atlanta, GA: 45 job postings.
+
+### Ranking of best 5 paying states across all job title average salaries:
+
+1. Arkansas: $89,250.
+2. Kansas: $75,750.
+3. South Dakota: $74,500.
+4. Montana: $73,2500.
+5. Iowa: $73,071.
 
 ### Top 5 states for each job:
 
