@@ -63,25 +63,25 @@ I looked at the distributions of the data and the value counts for the various c
 Here are some of the interesting statisitical results that I found from this analysis.
 
 ### Average salaries for each job title.
-creative director - $111,886.
+creative director:      $111,886.
 
-marketing director - $99,547.
+marketing director:     $99,547.
 
-marketing manager - $76,266.
+marketing manager:      $76,266.
 
-event manager - $68,375.
+event manager:          $68,375.
 
-content creation - $63,641.
+content creation:       $63,641.
 
-brand manager - $62.928.
+brand manager:          $62.928.
 
-event coordinator - $62,729.
+event coordinator:      $62,729.
 
-marketing coordinator - $60,873.
+marketing coordinator:  $60,873.
 
-social media planner - $58,658.
+social media planner:   $58,658.
 
-brand ambassador - $42,684.
+brand ambassador:       $42,684.
 
 ### Interesting Statistics
 The creative director job position makes the most money with a average salary of $111,886.
@@ -159,9 +159,9 @@ Hawaii is the #5 best paying state for Marketing Coordinators with a average sal
 
 ### Brand Manager
 1. New York:	$157,000.
-2. Ohio:	      $126.500.
-3. New Mexico:	$86.500.
-4. Colorado:	$83.125.
+2. Ohio:	      $126,500.
+3. New Mexico:	$86,500.
+4. Colorado:	$83,125.
 5. Montana:	   $70,750.
 
 ### Social Media Planner
