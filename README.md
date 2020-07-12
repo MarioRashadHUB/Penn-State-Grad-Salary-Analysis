@@ -94,90 +94,93 @@ Those who have exoerience with adobe creative cloud make 16% more in total salar
 
 Across all job titles, the insurance sector has the best average salary of $87,655.
 
+### My Favorite Fact from Analysis:
+Hawaii is the #5 best paying state for Marketing Coordinators at.
+
 ### Ranking of best 5 paying states across all job title average salaries:
 
-1. Arkansas: $89,250
-2. Kansas: $75,750
-3. South Dakota: $74,500
-4. Montana: $73,2500
-5. Iowa: $73,071
+1. Arkansas: $89,250.
+2. Kansas: $75,750.
+3. South Dakota: $74,500.
+4. Montana: $73,2500.
+5. Iowa: $73,071.
 
 ### Top 5 cities with the most job postings:
 
-1. New York City, NY: 127 Job postings
-2. San Fransico, CA: 60 Job postings
-3. Chicago, IL: 58 Job postings
-4. Seattle, WA: 56 Job postings
-5. Atlanta, GA: 45 Job postings
+1. New York City, NY: 127 job postings.
+2. San Fransico, CA: 60 job postings.
+3. Chicago, IL: 58 job postings.
+4. Seattle, WA: 56 job postings.
+5. Atlanta, GA: 45 job postings.
 
-### Top 5 cities for each job
+### Top 5 states for each job:
 
 ### Creative Director
-1. MO	$184,000
-2. TX	$140,400
-3. IA	$138,250
-4. WA	$138,250
-5. NJ	$137,250
+1. Montana:    $184,000.
+2. Texas:      $140,400.
+3. Iowa:       $138,250.
+4. Washington:	$138,250.
+5. New Jersey: $137,250.
 
 ### Marketing Manager
-1. IA	186.000000
-2. MI	141.500000
-3. MN	130.250000
-4. SC	99.500000
-5. CT	96.416667
+1. Iowa:             $186,000.
+2. Michigan:         $141,500.
+3. Minnesota:        $130,250.
+4. South Carolina:   $99,500.
+5. Connecticut:      $96,416.
 
 ### Brand Ambassador
-1. KS	81.500000
-2. AL	66.000000
-3. OK	56.562500
-4. KY	56.166667
-5. IA	56.125000
+1. Kansas:     $81,500.
+2. Alabama:	   $66,000.
+3. Oklahoma:   $56,562.
+4. Kentucky:	$56,166.
+5. Iowa:       $56,125.
 
 ### Marketing Coordinator
-1. NM	99.000000
-2. MO	94.666667
-3. CT	85.500000
-4. DC	82.800000
-5. HI	80.500000
+1. New Mexico:       $99,999.
+2. Montana: 	      $94,966.
+3. Connecticut:	   $85,500.
+4. Washington D.C:   $82,800.
+5. Hawaii:        	$80,500.
 
 ### Content Creation
-1. OH	89.500000
-2. CT	85.214286
-3. TX	82.875000
-4. VA	79.000000
-5. MD	75.875000
+1. Ohio:	         $89,500.
+2. Connecticut:	$85,214.
+3. Texas:      	$82,875.
+4. Virginia:	   $79,000.
+5. Maryland:	   $75,875.
 
 ### Event Coordinator
-1. IA	94.000000
-2. MI	89.500000
-3. AL	82.500000
-4. NH	77.500000
-5. CO	75.666667
+1. Iowa: 	      $94,000.
+2. Michigan:	   $89,500.
+3. Alabama:    	$82,500.
+4. New Hampshire:	$77,500.
+5. Colorado:   	$75,666.
 
 ### Brand Manager
-1. NY	157.000000
-2. OH	126.500000
-3. NM	86.500000
-4. CO	83.125000
-5. MO	70.750000
+1. New York:	$157,000.
+2. Ohio:	      $126.500.
+3. New Mexico:	$86.500.
+4. Colorado:	$83.125.
+5. Montana:	   $70,750.
 
 ### Social Media Planner
-1. WI	90.250000
-2. NM	66.250000
-3. NY	63.650000
-4. GA	63.500000
-5. CA	60.625000
+1. Wisconsin:	$90,250.
+2. New Mexico:	$66,250.
+3. New York:	$63,650.
+4. Georgia:	   $63,500.
+5. California:	$60,625.
 
 ### Event Manager
-1. IL	122.500000
-2. NY	91.600000
-3. GA	86.666667
-4. NJ	84.000000
-5. OH	80.333333
+1. Illinois:	$122,500.
+2. New York:	$91,600.
+3. Georgia:	   $86,666.
+4. New Jersey:	$84,000.
+5. Ohio:	      $80,333.
 
 ### Marketing Director
-1. UT	265.5000
-2. OH	182.5000
-3. FL	165.5000
-4. IL	127.5000
-5. MN	116.2500
+1. Utah:       $265,500.
+2. Ohio:       $182,500.
+3. Florida:	   $165,500.
+4. Illinois:	$127,500.
+5. Minnesota:	$116,250.
