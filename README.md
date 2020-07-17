@@ -17,7 +17,7 @@
 **Scraper Article:** https://towardsdatascience.com/selenium-tutorial-scraping-glassdoor-com-in-10-minutes-3d0915c6d905
 
 ## Data
-Tweaked the web scraper github repo (above) to scrape 7000 job postings from glassdoor.com. With each job, I got the following:
+Tweaked the web scraper github repo (above) to scrape 2000 job postings from glassdoor.com. With each job, I got the following:
 *	Job title
 *	Salary Estimate
 *	Job Description
