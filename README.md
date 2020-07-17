@@ -73,7 +73,7 @@ event manager:          $68,375.
 
 content creation:       $63,641.
 
-brand manager:          $62.928.
+brand manager:          $62,928.
 
 event coordinator:      $62,729.
 
